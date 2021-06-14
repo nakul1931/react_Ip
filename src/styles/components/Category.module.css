@@ -1,0 +1,48 @@
+.box {
+  padding: 2em;
+  background-color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  cursor: pointer;
+  box-shadow: 4px 6px 10px 2px rgb(219, 219, 219);
+  border-radius: 10px;
+
+  transition: box-shadow 250ms ease;
+
+  animation: appear var(--delay) ease;
+}
+.box:hover {
+  box-shadow: 4px 6px 12px 3px rgb(201, 201, 201);
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(35%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.img {
+  min-width: 100px;
+  max-width: 200px;
+  width: 10vw;
+
+  min-height: 100px;
+  max-height: 200px;
+  height: 10vw;
+
+  margin-bottom: 2em;
+}
+
+.title {
+  text-align: center;
+  font-size: 1.2em;
+}

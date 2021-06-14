@@ -1,0 +1,19 @@
+.container {
+  height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.img {
+  width: 50vh;
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.title {
+  font-size: 2em;
+}

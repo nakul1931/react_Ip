@@ -1,0 +1,13 @@
+export { default as Login } from "./Login";
+export { default as SignUp } from "./SignUp";
+export { default as Categories } from "./Categories";
+export { default as AddCategory } from "./AddCategory";
+export { default as Products } from "./Products";
+export { default as AddProduct } from "./AddProduct";
+export { default as CategoryId } from "./CategoryId";
+export { default as ProductId } from "./ProductId";
+export { default as UpdateProductId } from "./UpdateProductId";
+export { default as UpdateCategoryId } from "./UpdateCategoryId";
+export { default as Inventory } from "./Inventory";
+export { default as AddInventory } from "./AddInventory";
+export { default as UpdateInventory } from "./UpdateInventory";

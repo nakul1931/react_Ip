@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2em;
+
+  margin: 1em;
+}
+
+.img {
+  min-width: 150px;
+  max-width: 300px;
+  width: 20vw;
+
+  min-height: 150px;
+  max-height: 300px;
+  height: 20vw;
+}
+
+.table td,
+th {
+  padding: 0.5em;
+}
+
+.table th {
+  text-align: right;
+}
+.table th::after {
+  content: " :";
+}
+
+.heading {
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.button_container {
+  display: flex;
+  gap: 1em;
+}
+
+.actions_container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin-right: 3em;
+
+  margin-bottom: 1em;
+}

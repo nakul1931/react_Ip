@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-r1: 90;
+  --primary-r2: 142;
+  --primary-r3: 255;
+
+  --primary-color: rgb(90, 142, 255);
+  --primary-background: rgb(125, 166, 255, 0.2);
+  --primary-hover: rgb(86, 131, 226);
+  --primary-color-light: rgba(90, 142, 255, 0.1);
+
+  --primary-red: rgb(233, 104, 104);
+  --primary-gray: #898989;
+  --primary-black: #2f2e41;
+  --primary-orange: #ffbb4b;
+  --primary-green: #07bc0c;
+
+  --background-gray: rgb(247, 247, 247, 0.8);
+  --background-gray-hover: #e4e4e4;
+  --hover-gray: rgba(184, 184, 184, 0.2);
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f5f7fb;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.8em;
+  }
+}
+
+.hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--hover-gray);
+  border-radius: 50%;
+  transform: scaleX(0) scaleY(0);
+  transition: transform 150ms ease-in;
+}
+
+.hover:hover::before,
+.hover:active::before {
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
+.info {
+  text-align: center;
+  font-size: 1.4em;
+  font-style: italic;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+}
+select::-ms-expand {
+  display: none;
+}
+select option {
+  font-size: 1.1em;
+}

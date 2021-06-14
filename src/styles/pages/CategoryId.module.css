@@ -1,0 +1,55 @@
+.actions_container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 1em;
+}
+
+.category {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.button_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 0em 3em 3em;
+}
+
+.img {
+  min-width: 150px;
+  max-width: 300px;
+  width: 20vw;
+
+  min-height: 150px;
+  max-height: 300px;
+  height: 20vw;
+
+  align-self: center;
+}
+
+.heading {
+  font-size: 1.2em;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.box_container {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 1em;
+}
